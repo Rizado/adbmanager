@@ -205,6 +205,8 @@ procedure TSDForm.FormKeyUp(Sender: TObject; var Key: word; Shift: TShiftState);
 begin
   if Key = VK_ESCAPE then
     CancelCopy;
+  if Key = VK_BACK then
+    UpBtnClick(Sender);
 end;
 
 //Копирование с компа на SD-Card
